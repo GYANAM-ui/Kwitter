@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwiter</title>
+    <link rel="icon" href="https://www.pinclipart.com/picdir/middle/1-13998_7-cs-of-effective-communication-in-business-logo.png" type="image/gif" sizes="16x16">
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" type="text/css" href="social.css">
+<script src="social.js"></script>
+</head>
+<body id="back1">
+    <video autoplay muted loop id="myVideo">
+        <source src="back.mp4" type="video/mp4">
+      </video>
+
+<center>
+	<h1 class="header" style="color: #ffffff;">	
+        <sup>
+		Kwitter	
+	<img src="m2.png">
+    </sup>
+</h1>
+
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div" style="background-color: greenyellow;">
+
+	<img src="logo.png" class="logo">
+		<h3 >See what is happening in the world right now</h3>
+
+		<h4 >Join Kwitter today</h4>
+		
+		<div class="form-group">
+		  <label >User Name:</label>
+		 <input type="text" id="user_name" class="form-control" placeholder="User Name">
+		</div>
+
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
+		<br><br>
+	</div>
+</center>
+<script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+    
+    // Get the button
+    var btn = document.getElementById("myBtn");
+    
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    
+
+</body>
+</html>
